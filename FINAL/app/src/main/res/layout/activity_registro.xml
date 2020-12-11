@@ -7,6 +7,23 @@
     android:backgroundTint="#296C2C"
     tools:context=".Registro">
 
+    <TextView
+        android:id="@+id/textprecio"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundTint="#27682A"
+        android:text="Precio"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintBottom_toTopOf="@+id/textestado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/editingresarcódigo"
         android:layout_width="wrap_content"
@@ -88,18 +105,35 @@
 
     <TextView
         android:id="@+id/textserie"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#27682A"
         android:text="Serie"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintBottom_toTopOf="@+id/textprecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textestado"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#27682A"
+        android:text="Estado"
         android:textColor="#27682A"
         android:textColorHighlight="#27682A"
         android:textColorLink="#27682A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="310dp" />
+        tools:layout_editor_absoluteY="448dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
