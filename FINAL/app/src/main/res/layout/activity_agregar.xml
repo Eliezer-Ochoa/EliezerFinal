@@ -7,6 +7,7 @@
     android:background="#434F95"
     tools:context=".Agregar">
 
+
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="380dp"
@@ -14,6 +15,8 @@
         android:ems="10"
         android:hint="Codigo"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -28,12 +31,14 @@
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintVertical_bias="0.224" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -42,12 +47,14 @@
         android:ems="10"
         android:hint="Marca"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.312" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -56,12 +63,14 @@
         android:ems="10"
         android:hint="Modelo"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -70,12 +79,14 @@
         android:ems="10"
         android:hint="Serie"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <EditText
         android:id="@+id/editTextTextPersonName9"
@@ -84,12 +95,14 @@
         android:ems="10"
         android:hint="Precio"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.563" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -98,12 +111,14 @@
         android:ems="10"
         android:hint="Estado"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintVertical_bias="0.647" />
 
     <EditText
         android:id="@+id/editTextTextPersonName11"
@@ -112,12 +127,14 @@
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.734" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -126,12 +143,14 @@
         android:ems="10"
         android:hint="Fecha"
         android:inputType="date"
+        android:textColor="#FDFDFD"
+        android:textColorLink="#131B53"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
+        app:layout_constraintVertical_bias="0.817" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -147,15 +166,33 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
         android:text="Agregar Nuevo Equipo"
-        android:textSize="18sp"
+        android:textColor="#131B53"
+        android:textColorLink="#131B53"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/etagregar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#131B53"
+        android:text="Agregar"
+        android:textColor="#296C2C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="621dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

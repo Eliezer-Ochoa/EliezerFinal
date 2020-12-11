@@ -20,4 +20,5 @@ class Registro : AppCompatActivity() {
         val intent = Intent(this, Clima::class.java)
         startActivity(intent)
     }
+
 }

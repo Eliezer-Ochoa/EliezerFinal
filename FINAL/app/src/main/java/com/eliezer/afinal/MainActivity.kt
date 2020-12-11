@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun AccederRegistro(view: View) {
-        val intent = Intent(this, Registro::class.java)
+        val intent = Intent(this, Agregar::class.java)
         startActivity(intent)
     }
 }
