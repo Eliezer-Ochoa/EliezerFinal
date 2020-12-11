@@ -4,6 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#296C2C"
     tools:context=".Registro">
 
+    <EditText
+        android:id="@+id/editingresarcódigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#27682A"
+        android:ems="10"
+        android:hint="Ingresar Código"
+        android:inputType="textPersonName"
+        android:textColor="#296C2C"
+        android:textColorHighlight="#296C2C"
+        android:textColorLink="#296C2C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pfBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#131B53"
+        android:text="Buscar"
+        android:textColor="#296C2C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
