@@ -1,0 +1,48 @@
+create Database androidkotlin
+
+create table equipo
+( codigoequipo int primary key,
+  nombre nvarchar (20),
+  marca nvarchar (20),
+  modelo nvarchar (20),
+  serie nvarchar (20),
+  estado nvarchar (20),
+  fechacompra date ,
+  precio int,
+  cantidad int,
+);
+
+INSERT INTO equipo VALUES (1,'Amplificador','Behringer','Ep400','Ap283848','Exelente','05/03/2015',15000,4)
+INSERT INTO equipo VALUES (2,'Procesador analogico','Behringer','Ep400','Ap283848','Exelente','05/03/2015',12000,1);
+INSERT INTO equipo VALUES (3,'Microfono inalambrico','Elite','Ep10','Ap28','Exelente','05/03/2015',1000,1);
+INSERT INTO equipo VALUES (4,'Luces robotic','Golden Centure','MH79','M848','Exelente','05/03/2015',5000,2);
+INSERT INTO equipo VALUES (5,'Luces eseneario','Golden centure','PI0005f','fi048','Exelente','05/03/2015',4000,4);
+INSERT INTO equipo VALUES (6,'Poderes5000','Toprox','TRX3000','ARX300','Exelente','05/03/2015',50000,2);
+INSERT INTO equipo VALUES (7,'Poder6000','Behringer','Nu6000sp','UNps2345','Exelente','03/06/2017',60000,1);
+INSERT INTO equipo VALUES (8,'Rac','Shure','PMB960','MH568','Bueno','02/12/2014',2000,1);
+INSERT INTO equipo VALUES (9,'Pedestales','Shure','PMB078','PH2104','Exelente','05/09/2018',8000,18);
+INSERT INTO equipo VALUES (10,'Mixer','Sounderof','EpM12','E9475#','Exelente','05/03/2015',3000,1);
+INSERT INTO equipo VALUES (11,'Cable Audio','Sony','Er45','de45','malo','06/10/2012',5000,15);
+INSERT INTO equipo VALUES (12,'Microfono alambrico','Shure','PCA58','Ap28','Exelente','05/03/2010',5050,13);
+INSERT INTO equipo VALUES (13,'Extenciones','Behringer','Ep400','Ap48','Exelente','01/03/2019',8000,6);
+INSERT INTO equipo VALUES (14,'Cable Microfono','Behringer','Ep400','MDF848','Exelente','05/06/2013',9000,24);
+INSERT INTO equipo VALUES (15,'Regletas','Volteck','EM400','Ap23','Exelente','05/03/2015',600,3);
+INSERT INTO equipo VALUES (16,'Cable-c-Mixer','Shure','MP345','SA34','Exelente','01/10/2015',1000,9);
+INSERT INTO equipo VALUES (17,'Cable-ac','Beh34','Ep400','Ap248','Exelente','05/03/2014',800,12);
+INSERT INTO equipo VALUES (18,'Maquina Humo','Golden','Ep400F400c','Pe877#','Exelente','05/03/2019',12000,1);
+INSERT INTO equipo VALUES (19,'Cables Lam','Lam','Ep400','Ap283848','Exelente','05/03/2010',2000,1);
+INSERT INTO equipo VALUES (20,'Parlantes','Behringer','B215XL','MK12','Exelente','05/03/2020',20000,2);
+
+INSERT INTO equipo VALUES (21,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (22,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (23,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (24,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (25,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (26,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (27,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (28,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (29,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (30,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+INSERT INTO equipo VALUES (31,'Amplificador','Behringer','Ep400','Ap283848',15000,'Exelente','05/03/2015');
+
+select * from equipo
