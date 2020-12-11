@@ -126,14 +126,45 @@
         android:layout_height="51dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#27682A"
         android:text="Estado"
         android:textColor="#27682A"
         android:textColorHighlight="#27682A"
         android:textColorLink="#27682A"
+        app:layout_constraintBottom_toTopOf="@+id/textfechacompra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textfechacompra"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#27682A"
+        android:text="Fecha Compra"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <TextView
+        android:id="@+id/textcantidad"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:text="Cantidad"
+        android:textColor="#27682A"
+        android:textColorLink="#27682A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="448dp" />
+        tools:layout_editor_absoluteY="544dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
