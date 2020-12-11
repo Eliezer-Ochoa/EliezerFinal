@@ -34,4 +34,32 @@
         android:textColor="#296C2C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textnombre"
+        android:layout_width="328dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#27682A"
+        android:text="Nombre"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintBottom_toTopOf="@+id/textmarca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textmarca"
+        android:layout_width="332dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#27682A"
+        android:text="Marca"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="174dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
