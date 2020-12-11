@@ -37,8 +37,10 @@
 
     <TextView
         android:id="@+id/textnombre"
-        android:layout_width="328dp"
+        android:layout_width="0dp"
         android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#27682A"
         android:text="Nombre"
@@ -47,19 +49,57 @@
         android:textColorLink="#27682A"
         app:layout_constraintBottom_toTopOf="@+id/textmarca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textmarca"
-        android:layout_width="332dp"
-        android:layout_height="55dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#27682A"
         android:text="Marca"
         android:textColor="#27682A"
         android:textColorHighlight="#27682A"
         android:textColorLink="#27682A"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="174dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textmodelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textmodelo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundTint="#27682A"
+        android:text="Modelo"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintBottom_toTopOf="@+id/textserie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textserie"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#27682A"
+        android:text="Serie"
+        android:textColor="#27682A"
+        android:textColorHighlight="#27682A"
+        android:textColorLink="#27682A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
