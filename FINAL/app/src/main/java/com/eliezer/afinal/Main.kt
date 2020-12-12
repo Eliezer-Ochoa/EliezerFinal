@@ -1,6 +1,7 @@
 package com.eliezer.afinal
 
-class main (temp:Double){
+
+class Main (temp:Double){
     var Temp:Double = 0.0
     init {
         this.Temp = temp
