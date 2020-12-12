@@ -1,4 +1,9 @@
 package com.eliezer.afinal
 
-class Weather {
+class Weather(description: String) {
+    var descripcion: String = ""
+
+    init {
+        this.descripcion = description
+    }
 }
