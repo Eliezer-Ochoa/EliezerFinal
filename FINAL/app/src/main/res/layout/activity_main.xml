@@ -16,6 +16,7 @@
         android:layout_marginBottom="152dp"
         android:backgroundTint="#131B53"
         android:text="Acceder"
+        android:onClick="lanzaregregar"
         android:textColor="#296C2C"
         android:textSize="18sp"
         android:textStyle="bold"

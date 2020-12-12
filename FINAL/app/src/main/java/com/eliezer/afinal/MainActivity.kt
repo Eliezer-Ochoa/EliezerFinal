@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun AccederRegistro(view: View) {
+    fun lanzaregregar(view: View) {
         val intent = Intent(this, Agregar::class.java)
         startActivity(intent)
     }
