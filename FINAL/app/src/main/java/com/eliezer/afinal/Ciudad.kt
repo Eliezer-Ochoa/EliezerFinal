@@ -1,9 +1,9 @@
 package com.eliezer.afinal
 
-class Ciudad (name:String, weather:List<Weather>, main:main) {
+class Ciudad (name:String, weather:List<Weather>, main:Main) {
     var name:String = ""
     var weather:List<Weather>? = null
-    var main:main? = null
+    var main:Main? = null
     init {
         this.name = name
         this.weather = weather

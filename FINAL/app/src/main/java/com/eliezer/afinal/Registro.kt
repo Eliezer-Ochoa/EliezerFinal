@@ -11,14 +11,8 @@ class Registro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
     }
 
-    fun lanzarclima(view: View) {
+    fun lanzarClima(view: View) {
         val intent = Intent(this, Clima::class.java)
         startActivity(intent)
     }
-
-    fun IrClima(view: View) {
-        val intent = Intent(this, Clima::class.java)
-        startActivity(intent)
-    }
-
 }

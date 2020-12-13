@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230851096536",
+    "project_id": "eliezerfinal",
+    "storage_bucket": "eliezerfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230851096536:android:087b94d9dd9fb9af824cad",
+        "android_client_info": {
+          "package_name": "com.eliezer.afinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230851096536-4lsqr41t51hvaont0hq57k6g79qgoksv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIb8HT9aPsWNVIPOfDuC6AGJHNUJfQNnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230851096536-4lsqr41t51hvaont0hq57k6g79qgoksv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

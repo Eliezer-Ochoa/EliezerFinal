@@ -30,7 +30,7 @@ class Clima : AppCompatActivity() {
     {
 
         val queue = Volley.newRequestQueue(this)
-        val solicitud = StringRequest(Request.Method.GET,url,Response.Listener<String> {
+        val solicitud = StringRequest(Request.Method.GET,url, {
                 response ->
             try {
                 Log.d("ResultadoVolley",response)
@@ -39,15 +39,14 @@ class Clima : AppCompatActivity() {
                 val tvGrado: TextView = findViewById(R.id.tvgrado)
                 val tvCiuda: TextView = findViewById(R.id.tvciudad)
                 val tvDescripcion: TextView = findViewById(R.id.tvdescripcion)
-                tvGrado.text = ciudad.main!!.temp.toString() + "°"
+                tvGrado.text = ciudad.main!!.Temp.toString() + "°"
                 tvCiuda.text = ciudad.name
                 tvDescripcion.text = ciudad.weather!!.get(0).descripcion
             } catch (e:Exception){
 
             }
-        }, Response.ErrorListener {
+        }, {
             Log.e("ErrorVolley","ERROR EN LA CONSULTA")
         })
         queue.add(solicitud)
-    }
-}
+}}

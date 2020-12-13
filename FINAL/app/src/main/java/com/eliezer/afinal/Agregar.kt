@@ -11,8 +11,9 @@ class Agregar : AppCompatActivity() {
         setContentView(R.layout.activity_agregar)
     }
 
-    fun lanzarclima(view: View) {
-        val intent = Intent(this, Clima::class.java)
-        startActivity(intent)
+
+            fun lanzarR(view: View) {
+            val intent = Intent(this, Registro::class.java)
+            startActivity(intent)
     }
 }

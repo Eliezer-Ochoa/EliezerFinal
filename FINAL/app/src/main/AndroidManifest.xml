@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FINAL">
-        <activity android:name=".Agregar"></activity>
+        <activity android:name=".AgregarUsuario"></activity>
+        <activity android:name=".Password" />
+        <activity android:name=".Agregar" />
         <activity android:name=".Clima" />
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">

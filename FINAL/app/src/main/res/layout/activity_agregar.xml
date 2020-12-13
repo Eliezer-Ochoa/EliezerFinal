@@ -192,13 +192,13 @@
         android:textColor="#296C2C"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etclima"
+        app:layout_constraintBottom_toTopOf="@+id/etregistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/etclima"
+        android:id="@+id/etregistro"
         android:layout_width="334dp"
         android:layout_height="44dp"
         android:layout_marginStart="32dp"
@@ -206,8 +206,8 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#131B53"
         android:fontFamily="sans-serif"
-        android:text="Clima"
-        android:onClick="lanzarclima"
+        android:onClick="lanzarR"
+        android:text="Registro"
         android:textAllCaps="true"
         android:textColor="#296C2C"
         android:textSize="18sp"
