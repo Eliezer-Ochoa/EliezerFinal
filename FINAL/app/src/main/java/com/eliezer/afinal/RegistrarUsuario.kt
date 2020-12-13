@@ -21,7 +21,7 @@ class RegistrarUsuario : AppCompatActivity() {
     private lateinit var editprimerapellido: EditText
     private lateinit var editcorreo: EditText
     private lateinit var editcontras: EditText
-    private lateinit var  progressBar: ProgressDialog
+    private lateinit var progressBar: ProgressDialog
     private lateinit var databaseReference: DatabaseReference
     private lateinit var database: FirebaseDatabase
     private lateinit var auth: FirebaseAuth
@@ -67,7 +67,8 @@ class RegistrarUsuario : AppCompatActivity() {
 
         //Verificamos que los campos estén llenos
         if (!TextUtils.isEmpty(primernombre) && !TextUtils.isEmpty(editprimerapellido.toString())
-            && !TextUtils.isEmpty(correo) && !TextUtils.isEmpty(contras)) {
+            && !TextUtils.isEmpty(correo) && !TextUtils.isEmpty(contras)
+        ) {
 
             /*Antes de iniciar nuestro registro bloqueamos la pantalla o también podemos usar una barra de proceso por lo que progressbar está obsoleto*/
 
@@ -98,10 +99,12 @@ class RegistrarUsuario : AppCompatActivity() {
                     //Por último nos vamos a la vista home
                     updateUserInfoAndGoHome()
 
-                }.addOnFailureListener{
+                }.addOnFailureListener {
                     // si el registro falla se mostrara este mensaje
-                    Toast.makeText(this, "Error en la autenticación.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this, "Error en la autenticación.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
         } else {
@@ -116,13 +119,17 @@ class RegistrarUsuario : AppCompatActivity() {
                 //Verificamos que la tarea se realizó correctamente
                     task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(this,
+                    Toast.makeText(
+                        this,
                         "Email " + user.email,
-                        Toast.LENGTH_SHORT).show()
+                        Toast.LENGTH_SHORT
+                    ).show()
                 } else {
-                    Toast.makeText(this,
+                    Toast.makeText(
+                        this,
                         "Error al verificar el correo ",
-                        Toast.LENGTH_SHORT).show()
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
     }
@@ -136,8 +143,15 @@ class RegistrarUsuario : AppCompatActivity() {
         progressBar.hide()
     }
 
+    fun Agregar(view: View) {
+        val intent = Intent(this, Agregar::class.java)
+        startActivity(intent)
+
+    }
+
     fun registrar(view: View) {
         createNewAccount()
     }
+
 
 }

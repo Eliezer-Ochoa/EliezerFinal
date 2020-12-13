@@ -77,7 +77,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun Registrar(view: View) {}
+    fun Registrar(view: View) {
+        startActivity(Intent(this, RegistrarUsuario::class.java))
+    }
     fun OlContraseña(view: View) {
 }
     fun IniciarSesión(view: View) {
