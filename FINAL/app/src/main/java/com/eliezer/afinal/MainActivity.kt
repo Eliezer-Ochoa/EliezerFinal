@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initialice() {
         etEmail = findViewById(R.id.editusuario)
-        etPassword = findViewById(R.id.editcontraseña)
+        etPassword = findViewById(R.id.editcontras)
         mProgressBar = ProgressDialog(this)
         mAuth = FirebaseAuth.getInstance()
     }
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     private fun goHome() {
         mProgressBar.hide()
         //Nos vamos a Home
-        val intent = Intent(this, Agregar::class.java)
+        val intent = Intent(this, RegistrarUsuario::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }

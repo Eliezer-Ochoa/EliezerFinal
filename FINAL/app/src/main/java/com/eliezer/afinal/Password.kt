@@ -51,8 +51,10 @@ class Password : AppCompatActivity() {
         }
     }
         private fun goMain() {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Agregar::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
-    }
+
+
+}
