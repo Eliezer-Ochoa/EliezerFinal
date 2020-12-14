@@ -5,6 +5,8 @@ import android.database.Cursor
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
 
 class Registro : AppCompatActivity() {
 
@@ -14,8 +16,8 @@ class Registro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
 
 
-
-      /*  val equipos  : Cursor = BD.rawQuery("SELECT  * from Equipos, LIKE ", null)
+/*
+       val equipos  : Cursor = db.rawQuery("SELECT  * from Equipos, LIKE ", null)
 
         if (equipos != null) {
             equipos.moveToFirst()
@@ -35,11 +37,12 @@ class Registro : AppCompatActivity() {
             } while (equipos.moveToNext())
         }
         equipos.close()
-     //   BD.close()
+
         //Cerramos el cursor y la conexion con la base de datos
         //Cerramos el cursor y la conexion con la base de datos
 
-       */
+ */
+
     }
 
 

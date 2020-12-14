@@ -19,12 +19,13 @@ class Clima : AppCompatActivity() {
 
         if (Network.hayRed(this))
         {
-            Toast.makeText(this,"Conectado a red",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"hay red",Toast.LENGTH_LONG).show()
             solicitudHTTPVolley("https://api.openweathermap.org/data/2.5/weather?id=3616253&appid=d3082f4bab5291b3ce8040e32600636a&lang=es&units=metric")
         } else {
-            Toast.makeText(this,"Sin conexión a red",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"No hay red",Toast.LENGTH_LONG).show()
         }
     }
+
 
     fun solicitudHTTPVolley(url:String)
     {
