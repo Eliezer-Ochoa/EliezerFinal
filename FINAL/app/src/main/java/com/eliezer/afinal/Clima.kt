@@ -40,7 +40,7 @@ class Clima : AppCompatActivity() {
                 val tvgrado: TextView = findViewById(R.id.tvgrado)
                 val tvciuda: TextView = findViewById(R.id.tvciudad)
                 val tvdescripcion: TextView = findViewById(R.id.tvdescripcion)
-                tvgrado.text = ciudad.main!!.Temp.toString() + "°"
+                tvgrado.text = ciudad.main!!.temp.toString() + "°"
                 tvciuda.text = ciudad.name
                 tvdescripcion.text = ciudad.weather!!.get(0).description
             } catch (e:Exception){
