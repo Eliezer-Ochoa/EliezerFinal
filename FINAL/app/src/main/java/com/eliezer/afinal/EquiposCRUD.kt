@@ -31,7 +31,7 @@ class EquiposCRUD(context: Context) {
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MARCA, item.marca)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MODELO, item.modelo)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_SERIE, item.serie)
-        values.put(EquiposContract.Companion.Entrada.COLUMNA_PRECIO, item.precio)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_PRECIO, item.preci o)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_ESTADO, item.estado)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_FECHACOMPRA, item.fechacompra)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_CANTIDAD, item.cantidad)
