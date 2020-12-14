@@ -1,7 +1,7 @@
 package com.eliezer.afinal
 
 class Equipos(codigo:String, nombre:String, marca:String, modelo:String, serie:String, precio:String, estado:String, fechacompra:String, cantidad:String) {
-
+//Creación de clase para nuestros campos de tabla de la BD
     private var codigo: String? = null;
     private var nombre: String? = null;
     private var marca: String? = null;
