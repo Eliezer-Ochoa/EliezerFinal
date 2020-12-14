@@ -5,4 +5,4 @@ class Main (temp:Double) {
     init {
         this.temp = temp
     }
-} 
+}
