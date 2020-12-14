@@ -4,6 +4,7 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
+import androidx.room.Database
 
 class EquiposCRUD(context: Context) {
 
@@ -31,7 +32,7 @@ class EquiposCRUD(context: Context) {
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MARCA, item.marca)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MODELO, item.modelo)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_SERIE, item.serie)
-        values.put(EquiposContract.Companion.Entrada.COLUMNA_PRECIO, item.preci o)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_PRECIO, item.precio)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_ESTADO, item.estado)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_FECHACOMPRA, item.fechacompra)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_CANTIDAD, item.cantidad)
@@ -147,6 +148,7 @@ class EquiposCRUD(context: Context) {
         return item!!;
 
     }
+    //Actualizar la fila de los datos que queremos actualizar
     fun updateEquipos(item: Equipos){
         //Abrir BD en modo escritura
         //Cambio de datos y mapiando
@@ -170,6 +172,16 @@ class EquiposCRUD(context: Context) {
 
         db.close()
 
+    }
+//Eliminando un registro
+    fun deleteEquipos(item: Equipos){
+        val db:SQLiteDatabase = helper?.writableDatabase!!
+
+        db.delete(EquiposContract.Companion.Entrada.NOMBRE_TABLA,
+        "id = ?",
+        arrayOf(item.id))
+
+    db.close()
     }
 
 }
