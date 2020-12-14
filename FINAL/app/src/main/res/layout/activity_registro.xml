@@ -230,4 +230,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/logo" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="304dp"></LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
