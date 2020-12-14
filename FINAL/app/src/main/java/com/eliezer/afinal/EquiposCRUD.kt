@@ -99,7 +99,7 @@ class EquiposCRUD(context: Context) {
         return items
     }
 
-    //Haciendo un filtro con el mismo query
+    //Haciendo un filtro de consultas con el mismo query
     fun getEquipos(id:String): Equipos {
         var item:Equipos? = null
 
