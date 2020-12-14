@@ -6,6 +6,6 @@ import android.os.Bundle
 class NuevoEquipo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nuevo_equipo)
+       // setContentView(R.layout.activity_nuevo_equipo)
     }
 }
