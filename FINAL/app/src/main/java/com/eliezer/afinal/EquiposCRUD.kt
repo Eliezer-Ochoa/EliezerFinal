@@ -26,7 +26,7 @@ class EquiposCRUD(context: Context) {
         val values = ContentValues()
 
         //Mapeo de las columnas con valores a insertar
-        values.put(EquiposContract.Companion.Entrada.COLUMNA_ID, item.codigo)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_ID, item.id)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_NOMBRE, item.nombre)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MARCA, item.marca)
         values.put(EquiposContract.Companion.Entrada.COLUMNA_MODELO, item.modelo)
@@ -145,6 +145,30 @@ class EquiposCRUD(context: Context) {
         c.close()
 
         return item!!;
+
+    }
+    fun updateEquipos(item: Equipos){
+        //Abrir BD en modo escritura
+        //Cambio de datos y mapiando
+        val db:SQLiteDatabase = helper?.writableDatabase!!
+        val values = ContentValues()
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_ID, item.id)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_NOMBRE, item.nombre)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_MARCA, item.marca)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_MODELO, item.modelo)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_SERIE, item.serie)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_PRECIO, item.precio)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_ESTADO, item.estado)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_FECHACOMPRA, item.fechacompra)
+        values.put(EquiposContract.Companion.Entrada.COLUMNA_CANTIDAD, item.cantidad)
+
+        //Ejecutar BD
+        db.update(
+            EquiposContract.Companion.Entrada.NOMBRE_TABLA,
+            values, "id = ?",
+        arrayOf(item.id))
+
+        db.close()
 
     }
 

@@ -2,7 +2,7 @@ package com.eliezer.afinal
 
 class Equipos(codigo:String, nombre:String, marca:String, modelo:String, serie:String, precio:String, estado:String, fechacompra:String, cantidad:String) {
 //Creación de clase para nuestros campos de tabla de la BD
-    var codigo: String? = null;
+    var id: String? = null;
     var nombre: String? = null;
     var marca: String? = null;
     var modelo: String? = null;
@@ -13,7 +13,7 @@ class Equipos(codigo:String, nombre:String, marca:String, modelo:String, serie:S
     var cantidad: String? = null;
 
     init{
-        this.codigo = codigo;
+        this.id = codigo;
         this.nombre = nombre;
         this.marca = marca;
         this.modelo = modelo;
