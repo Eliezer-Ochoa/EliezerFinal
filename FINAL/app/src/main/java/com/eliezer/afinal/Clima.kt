@@ -37,12 +37,12 @@ class Clima : AppCompatActivity() {
                 Log.d("ResultadoVolley",response)
                 val gson = Gson()
                 val ciudad = gson.fromJson(response, Ciudad::class.java)
-                val tvGrado: TextView = findViewById(R.id.tvgrado)
-                val tvCiuda: TextView = findViewById(R.id.tvciudad)
-                val tvDescripcion: TextView = findViewById(R.id.tvdescripcion)
-                tvGrado.text = ciudad.main!!.Temp.toString() + "°"
-                tvCiuda.text = ciudad.name
-                tvDescripcion.text = ciudad.weather!!.get(0).descripcion
+                val tvgrado: TextView = findViewById(R.id.tvgrado)
+                val tvciuda: TextView = findViewById(R.id.tvciudad)
+                val tvdescripcion: TextView = findViewById(R.id.tvdescripcion)
+                tvgrado.text = ciudad.main!!.Temp.toString() + "°"
+                tvciuda.text = ciudad.name
+                tvdescripcion.text = ciudad.weather!!.get(0).description
             } catch (e:Exception){
 
             }
