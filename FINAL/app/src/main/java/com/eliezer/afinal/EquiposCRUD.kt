@@ -18,7 +18,7 @@ class EquiposCRUD(context: Context) {
     fun newEquipos(item: Equipos) {
         //creación de una neuva BD
         //Definiendo el obejeto de BD que se referncia a helper, ejcuta exectSQL DatBase Helper
-        //Abrir BD modo escritura
+        //Abrir BD  modo escritura
         val db: SQLiteDatabase =
             helper?.writableDatabase!!  //writableDatabasehabilitar BD para poder escribir en ella
 
